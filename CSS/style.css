@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Futura Md Bt';
+    src: url('/futura/futura\ medium\ bt.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Futura Bk Bt';
+    src: url('/futura/Futura\ Book\ font.ttf');
+}
+
 :root {
     --white:#ffffff;
     --slightyellow: #fbffa7;
@@ -14,6 +24,11 @@
 
 }
 
+body {
+    font-family: 'YourHandwritingFont', cursive;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -24,7 +39,8 @@
 
 
 
-
+/* MOBILE  */
+/* BEGINNING OF NAV SECTION FOR MOBILE */
 body {
    overflow-x: hidden;
 }
@@ -190,7 +206,9 @@ body {
         width: 100vw;
 
     } 
-    
+    /* END OF NAV SECTION */
+
+    /* MAIN SECTION */
     .content-links {
         display: flex;
         flex-flow: row wrap;
@@ -233,7 +251,7 @@ body {
         top: 8rem;
         font-size: 60px;
         color: #ff764d;
-        font-family: var(--ff-tertiary);
+        font-family: var(--ff-primary);
        
     }
     
@@ -252,7 +270,7 @@ body {
     }
     
     .first-text {
-        margin-top: 6rem;
+        margin-top: 3rem;
         text-align: start;
         font-size: 20px;
         color: #000000;
@@ -262,7 +280,7 @@ body {
     }
     
     .fifth-text {
-        margin-top: 4rem;
+        margin-top: 3rem;
         text-align: start;
         font-size: 30px;
         color: #000000;
@@ -304,6 +322,7 @@ body {
         
     
         .flex-container {
+    margin-top: 3rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -337,7 +356,7 @@ body {
     }
     
     .second-text {
-        margin-top: 6rem;
+        margin-top: 3rem;
         text-align: start;
         font-size: 20px;
         color: #000000;
@@ -430,7 +449,7 @@ body {
         }
         
         .fourth-img-container {
-            margin-top: 5rem;
+            margin-top: 3rem;
             display: flex;
             align-items: center;
             flex-flow:row wrap;
@@ -446,7 +465,7 @@ body {
         }
         
         .fourth-text {
-            margin-top: 6rem;
+            margin-top: 3rem;
             text-align: start;
             font-size: 20px;
             color: #000000;
@@ -464,7 +483,7 @@ body {
         }
     
         .fifth-text {
-        margin-top: 4rem;
+        margin-top: 3rem;
         text-align: start;
         font-size: 20px;
         color: #000000;
@@ -474,6 +493,7 @@ body {
     }
     
         .fifth-img-parent {
+            margin-top: 3rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -487,14 +507,14 @@ body {
         .fifth-text-child {
             margin: 1rem;
             font-family: var(--ff-secondary);
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1.5rem;
             width: 80vw;
         }
         .fifth-text-second-child {
             margin: 1rem;
             font-family: var(--ff-secondary);
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1.5rem;
             width: 80vw;
         }
@@ -599,8 +619,11 @@ body {
             font-family: var(--ff-primary);
             font-size: 20px;
             text-decoration: none;
-
         }
+
+        #seventh-text-icon-a {
+            font-size: 16px;
+         }
     
         .seventh-img-container {
             width: 100vw;
@@ -620,13 +643,15 @@ body {
             background-position: 50% ;
             background-size: cover;
         }
-    
+
         .border-2 {
             margin-top: 4rem;
             border: 1.5px solid var(--offwhite) ;
         }
     
-        /* FOOTER SECTION */
+        /* END OF MAIN SECTION (MOBILE)*/
+
+        /* FOOTER SECTION MOBILE*/
         .left-link-items a {
             display: block;
             font-family: var(--ff-secondary);
@@ -637,9 +662,9 @@ body {
         .social-media-links {
             display: flex;
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: center;
             margin-top: 1rem;
-            gap: 0.5rem;
+            gap: 0.7rem;
         }
     
         .footer-link-h2 {
@@ -732,7 +757,7 @@ body {
         }
         #E-mail{
             position: relative;
-            width: 70vw;
+            width: 60vw;
             height: 33.46px;
             background-color: var(--offwhite);
             font-family: var(--ff-secondary);
@@ -844,12 +869,17 @@ body {
 .fa-chevron-right {
     font-size: 10px;
 }
+
+/* END OF FOOTER (MOBILE) */
    
+
 
    @media screen and (min-width:768px) {
     body {
         overflow-x: hidden;
      }
+
+     /* NAV-HEADER SECTION TABLET */
          .nav-container {
              display: flex;
              position: absolute;
@@ -943,6 +973,7 @@ body {
              border: 1.5px solid var(--offwhite) ;
              margin: 0;
          }
+
      
          .more-on-ableton {
              display: flex;
@@ -1010,6 +1041,9 @@ body {
      
          } 
          
+          /* END OF NAV (TABLET-768)  */
+
+          /* MAIN SECTION (TABLET-768) */
          .content-links {
              display: flex;
              flex-flow: row wrap;
@@ -1052,7 +1086,7 @@ body {
              top: 13rem;
              font-size: 100px;
              color: #ff764d;
-             font-family: var(--ff-tertiary);
+             font-family: var(--ff-primary);
             
          }
          
@@ -1071,7 +1105,7 @@ body {
          }
          
          .first-text {
-             margin-top: 6rem;
+             margin-top: 4rem;
              text-align: start;
              font-size: 20px;
              color: #000000;
@@ -1113,6 +1147,7 @@ body {
              
          
              .flex-container {
+            margin-top: 4rem;
            display: flex;
            flex-wrap: wrap;
            align-items: center;
@@ -1146,7 +1181,7 @@ body {
          }
          
          .second-text {
-             margin-top: 6rem;
+             margin-top: 4rem;
              text-align: start;
              font-size: 20px;
              color: #000000;
@@ -1193,7 +1228,7 @@ body {
              }
          
              .third-text {
-                 margin-top: 3rem;
+                 margin-top: 4rem;
                  text-align: start;
                  font-size: 20px;
                  color: #000000;
@@ -1255,7 +1290,7 @@ body {
              }
              
              .fourth-text {
-                 margin-top: 6rem;
+                 margin-top: 4rem;
                  text-align: start;
                  font-size: 20px;
                  color: #000000;
@@ -1411,6 +1446,9 @@ body {
                  text-decoration: none;
      
              }
+             #seventh-text-icon-a {
+                font-size: 16px;
+             }
          
              .seventh-img-container {
                  width: 100vw;
@@ -1435,8 +1473,10 @@ body {
                  margin-top: 4rem;
                  border: 1.5px solid var(--offwhite) ;
              }
+
+             /* END OF MAIN (TABLET 768PX) */
          
-             /* FOOTER SECTION */
+             /* FOOTER SECTION (TABLET 768)*/
              .left-link-items a {
                  display: block;
                  font-family: var(--ff-secondary);
@@ -1657,106 +1697,92 @@ body {
         
    }
 
+   /* END OF FOOTER (TABLET-768) */
+
+
+   
    @media screen and (min-width: 1024px) {
     body {
         overflow-x: hidden;
      }
+
+     /* NAV-HEADER SECTION 1024PX */
      .desktop-nav-container {
-        position: relative;
-         display: flex;
-         align-items: center;
-         justify-content:space-around;
-         margin-top: 1.5rem;
-     }
-         .nav-container {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        position: relative;;
+    }
+        .nav-container {
+           display: none;
+        }
+    
+            .show {
             display: none;
-         }
-     
-             .show {
-             display: none;
-         }    
-         
-         
-         .desktop-left-nav-links {
+        }    
+        
+        
+        .desktop-left-nav-links {
+           display: flex;
+           flex-flow: row wrap;
+           align-items:center;
+           justify-content: space-between;
+           gap: 1rem;
+        }
+        
+        .desktop-left-nav  {
+            text-decoration: none;
+            font-size: 16px;
+            font-family: var(--ff-primary);
+            color: var(--black);
+        }
+
+        .more {
+            display: block;
+             color: var(--slightred);
+            text-decoration: none;
+            font-family: var(--ff-primary); 
+            font-size: 16px;
+        }
+        #more-icon {
+            font-size: 16px;
+        }
+        
+        .desktop-right-navs{
             display: flex;
-            flex-flow: row wrap;
-            align-items: flex-end;
             justify-content: space-between;
             gap: 1rem;
-            margin-left: 1rem;
-         }
-         
-         .desktop-left-nav  {
-             text-decoration: none;
-             font-size: 16px;
-             font-family: var(--ff-primary);
-             color: var(--black);
-         }
-         
-         .desktop-right-navs{
-             display: flex;
-             justify-content: space-between;
-             gap: 1rem;
-             align-items: flex-end;
-             margin-right: -3rem;
-         }
-         
-         .desktop-right-nav-1 {
-             color: var(--deepblue);
-             text-decoration: none;
-             font-family: var(--ff-primary);
-             font-size: 14px;
-         }
-         
-         
-         .desktop-right-nav-2 {
-             display: block;
-             color: var(--black);
-             text-decoration: none;
-             font-family: var(--ff-primary);
-             font-size: 14px;
-             
-         }
-         
-         .more {
-             display: block;
-              color: var(--slightred);
-             text-decoration: none;
-             font-family: var(--ff-primary); 
-             font-size: 16px;
-         }
-     
-     
-     .down-arrow {
-         width: 7.47px;
-         height: 9.33px;
-     }
-     
-     .menu {
-          display: none; 
-         font-family: var(--ff-primary);
-         color: var(--black);
-         font-size: 20px;
-         padding: 1.5rem;
-     }
-     .menu:hover {
-         cursor: pointer;
-     }
-     
-     .ableton-logo-container {
-        position: absolute;
-         top: 0.8rem;
-     }
-     .ableton-home-logo {
-
-     }
-         
-         .border-1 {
-             border: 1.5px solid var(--offwhite) ;
-             margin-top: 2rem;
-         }
-     
+            align-items: flex-start;
+            
+        }
         
+        .desktop-right-nav-1 {
+            color: var(--deepblue);
+            text-decoration: none;
+            font-family: var(--ff-primary);
+            font-size: 14px;
+        }
+        
+        
+        .desktop-right-nav-2 {
+            display: block;
+            color: var(--black);
+            text-decoration: none;
+            font-family: var(--ff-primary);
+            font-size: 14px;
+            
+        }
+        .ableton-logo-container {
+            display: none;
+        }
+         .border-1 {
+             border: 1.5px solid var(--offwhite);
+         }
+     /* END OF NAV-HEADER 1024PX */
+        
+
+     /* MAIN SECTION 1024PX */
          .content-links {
              display: flex;
              flex-flow: row wrap;
@@ -1799,7 +1825,7 @@ body {
              top: 16rem;
              font-size: 150px;
              color: #ff764d;
-             font-family: var(--ff-tertiary);
+             font-family: var(--ff-primary);
             
          }
          
@@ -2049,14 +2075,14 @@ body {
              .fifth-text-child {
                  margin: 1rem;
                  font-family: var(--ff-secondary);
-                 font-size: 20px;
+                 font-size: 16px;
                  line-height: 1.5rem;
                  width: 60vw;
              }
              .fifth-text-second-child {
                  margin: 1rem;
                  font-family: var(--ff-secondary);
-                 font-size: 20px;
+                 font-size: 16px;
                  line-height: 1.5rem;
                  width: 60vw;
              }
@@ -2070,7 +2096,7 @@ body {
              }
          
              .sixth-section-contents {
-                 margin-top: 18vw ;
+                 margin-top: 14vw ;
                  position: relative;
                  display: flex;
                  flex-flow: row wrap;
@@ -2163,6 +2189,9 @@ body {
                  text-decoration: none;
      
              }
+             #seventh-text-icon-a {
+                font-size: 16px;
+             }
          
              .seventh-img-container {
                  width: 100vw;
@@ -2176,7 +2205,7 @@ body {
          
              .seventh-img {
                  width: 80vw;
-                 height: 913px; 
+                 height: 520px; 
                  background: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=1.5&fit=crop&h=384&ixjsv=1.1.3&q=66&w=639");
                  background-position: 50% ;
                  background-size: cover;
@@ -2186,8 +2215,10 @@ body {
                  margin-top: 4rem;
                  border: 1.5px solid var(--offwhite) ;
              }
+
+        /* END OF MAIN 1024PX */
          
-             /* FOOTER SECTION */
+             /* FOOTER SECTION 1024PX */
 
              .footer-contents {
                 display: flex;
@@ -2213,7 +2244,7 @@ body {
              .social-media-links {
                  display: flex;
                  justify-content: flex-start;
-                 align-items: flex-end;
+                 align-items: center;
                  margin-top: 1rem;
                  gap: 0.5rem;
              }
@@ -2414,17 +2445,19 @@ body {
         }
     }
 
+    /* END OF FOOTER 1024PX */
+
 
    @media screen and (min-width: 1200px) {
     body {
         overflow-x: hidden;
      }
+
+     /* NAV-HEADER 1200PX */
      .desktop-nav-container {
-        position: relative;
          display: flex;
          align-items: center;
-         justify-content:space-around;
-         margin-top: 1.5rem;
+         justify-content:space-between;
      }
          .nav-container {
             display: none;
@@ -2438,10 +2471,9 @@ body {
          .desktop-left-nav-links {
             display: flex;
             flex-flow: row wrap;
-            align-items: flex-end;
+            align-items:center;
             justify-content: space-between;
-            gap: 1rem;
-            margin-left: 1rem;
+            gap: 1.5rem;
          }
          
          .desktop-left-nav  {
@@ -2456,14 +2488,14 @@ body {
              justify-content: space-between;
              gap: 1rem;
              align-items: flex-end;
-             margin-right: -3rem;
+             
          }
          
          .desktop-right-nav-1 {
              color: var(--deepblue);
              text-decoration: none;
              font-family: var(--ff-primary);
-             font-size: 16px;
+             font-size: 20px;
          }
          
          
@@ -2472,10 +2504,10 @@ body {
              color: var(--black);
              text-decoration: none;
              font-family: var(--ff-primary);
-             font-size: 14px;
+             font-size: 16px;
              
          }
-         
+        
          .more {
              display: block;
               color: var(--slightred);
@@ -2483,27 +2515,23 @@ body {
              font-family: var(--ff-primary); 
              font-size: 20px;
          }
-     
-    
-     .ableton-logo-container {
+    .ableton-logo-container {
+        display: none;
         position: absolute;
          top: 0.8rem;
-     }
-     .ableton-home-logo {
-
-     }
-         
+         left: 2rem;
+     }     
          .border-1 {
              border: 1.5px solid var(--offwhite) ;
-             margin-top: 2rem;
          }
-     
-        
+
+         /* END OF NAV-HEADER 1200PX */
+
+         /* BEGINNING OF MAIN */
          .content-links {
              display: flex;
              flex-flow: row wrap;
              align-items: flex-start;
-             margin: 1.5rem;
              gap: 1rem;
          }
          .about {
@@ -2541,7 +2569,7 @@ body {
              top: 18rem;
              font-size: 150px;
              color: #ff764d;
-             font-family: var(--ff-tertiary);
+             font-family: var(--ff-primary);
             
          }
          
@@ -2602,6 +2630,7 @@ body {
              
          
              .flex-container {
+        margin-top: 6rem;
            display: flex;
            flex-wrap: wrap;
            align-items: center;
@@ -2658,6 +2687,7 @@ body {
                  /* flex-shrink: ; */
              }
              .third-section-vid-container {
+                margin-top: 6rem;
                  display: flex;
                  flex-flow: column wrap;
                  align-items: center;
@@ -2678,7 +2708,7 @@ body {
              }
          
              .third-text {
-                 margin-top: 3rem;
+                 margin-top: 6rem;
                  text-align: start;
                  font-size: 30px;
                  color: #000000;
@@ -2724,7 +2754,7 @@ body {
              }
              
              .fourth-img-container {
-                 margin-top: 5rem;
+                 margin-top: 6rem;
                  display: flex;
                  align-items: center;
                  flex-flow:row wrap;
@@ -2758,7 +2788,7 @@ body {
              }
          
              .fifth-text {
-             margin-top: 4rem;
+             margin-top: 6rem;
              text-align: start;
              font-size: 30px;
              color: #000000;
@@ -2894,7 +2924,10 @@ body {
                  font-family: var(--ff-primary);
                  font-size: 30px;
                  text-decoration: none;
-     
+             }
+
+             #seventh-text-icon-a {
+                font-size: 20px;
              }
          
              .seventh-img-container {
@@ -2920,9 +2953,10 @@ body {
                  border: 1.5px solid var(--offwhite) ;
              }
          
-             /* FOOTER SECTION */
+            /* END OF MAIN 1200PX */
 
              
+            /* FOOTER SECTION 1200*/
              .footer-contents {
                 display: flex;
                 flex-flow: row wrap;
@@ -2948,9 +2982,9 @@ body {
              .social-media-links {
                  display: flex;
                  justify-content: flex-start;
-                 align-items: flex-end;
+                 align-items: center;
                  margin-top: 1rem;
-                 gap: 0.5rem;
+                 gap: 1rem;
              }
          
              .footer-link-h2 {
@@ -3146,9 +3180,9 @@ body {
 
         .fa-plus {
             font-size: 20px;
-        }
+        } 
 
-        
+        /* END OF FOOTER 1200PX */
    }
 
    
